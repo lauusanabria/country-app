@@ -1,0 +1,17 @@
+<h2>Search countries by capital</h2>
+<hr />
+<div class="row">
+  <div class="col">
+    <!--searchbox-->
+    <shared-search-box
+      placeholder="Enter capital name"
+      (onValue)="searchCountries($event)"
+    ></shared-search-box>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <hr />
+    <countries-table [countries]="countries"></countries-table>
+  </div>
+</div>
